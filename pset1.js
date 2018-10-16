@@ -25,7 +25,7 @@ const makeEven = (str) => {
      
    }
 }
-console.log(makeEven('herve'));
+console.log(makeEven('hervey'));
 
 
 /* 2
@@ -35,7 +35,11 @@ console.log(makeEven('herve'));
     @desc - return the last character in string
     @example - getLastChar('taq'); // 'q'
 */
+const getLastChar = string => {
+    return string.charAt(string.length-1);
+}
 
+console.log(getLastChar('foods'));
 /* 3
     @func get3rdChar
     @param {string} str
@@ -44,6 +48,15 @@ console.log(makeEven('herve'));
     @example - get3rdChar('taq'); // 'q'
     @example - get3rdChar('mo'); // 'not enough characters!'
 */
+const get3rdChar = string => {
+   if(string.length < 3) {
+   return "not enough characters";
+}
+ 
+ return string.charAt(2);
+}
+
+console.log(get3rdChar('ma'));
 
 /* 4
     @func get3rdCharFromEnd
@@ -54,7 +67,11 @@ console.log(makeEven('herve'));
     @example - get3rdCharFromEnd('mo'); // 'not enough characters!'
     @example - get3rdCharFromEnd('taq karim'); // 'r'
 */
+const get3rdCharFromEnd = string => {
+    return string.charAt(string.length-3);
+}
 
+console.log(get3rdCharFromEnd('huevos'));
 /* 5
     @func startsWithVowel
     @param {string} str
@@ -65,7 +82,15 @@ console.log(makeEven('herve'));
     @example - startsWithVowel('andy'); // true
     @example - startsWithVowel('Andy'); // true
 */
+const startsWithVowel = string => {
+const somes
 
+    // const lowercaseStr
+//     return "lol"
+}
+
+console.log("### startsWithVowel ###")
+console.log("returns false for input 'hervey'", startsWithVowel)
 /* 6
     @func endsWithVowel
     @param {string} str
